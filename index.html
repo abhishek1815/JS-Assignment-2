@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment_2 </title>
+</head>
+<body>
+    <script>
+     
+let input= prompt("Enter the Sentence : ");
+
+let count= input.trim().split(" ").length;
+
+let old = prompt("Enter word want to replace : ");
+let new1 = prompt("Enter new word : ");
+
+let latest= input.replaceAll(old, new1);
+
+let subStr= prompt("Enter substring want to check : ");
+let check = input.includes(subStr);
+
+let output= (`Sentence : ${input}
+Number of Words : ${count}
+After Replacement : ${latest}
+Does Sentence contains "${subStr}" ?  ${check ? "Yes" : "No"}
+`);
+
+alert(output);
+
+    </script>
+</body>
+</html>
